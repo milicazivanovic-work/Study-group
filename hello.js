@@ -22,15 +22,13 @@ printHelloName();
 */
 
 //Command Line Argument
-
-function printHelloName(name){
-  if (name = process.argv[2]) {
+function printHelloName(name) {
+  if (process.argv[2] != '' || process.argv[2] != isNaN) {
+    name = process.argv[2];
     console.log('Hello', name);
   } else {
-    name = 'Milica';
-    for (var i = 0; i < 5; i++) {
     console.log('Hello', name);
-    }
-  }  
-} 
-printHelloName();
+  }
+}
+
+for (var i = 0; i < 5; i++) printHelloName('Milica');
