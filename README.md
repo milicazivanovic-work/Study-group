@@ -1,4 +1,4 @@
-#What is the program about
+# What is the program about
 
 The hello.js file contains 3 different approaches of printing out paramater **name** 5 times:
 
