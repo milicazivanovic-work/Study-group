@@ -1,10 +1,6 @@
 # What is the program about
 
-The hello.js file contains 3 different approaches of printing out paramater **name** 5 times:
-
-1. Getting user input by prompt and using it to print out: Hello {theirName} 5 times
-2. Using a predefind parameter {name} and printing out the greeting 5 times
-3. Passing a command line argument and printing that value as Hello {argument} by typing:
+The hello.js file is passing a command line argument and printing that value as Hello {argument} by typing:
 
 ```
 node hello.js John
