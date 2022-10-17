@@ -1,19 +1,9 @@
-# What is the program about
+# What is the test about
 
-The hello.js file contains 3 different approaches of printing out paramater **name** 5 times:
+The **spec.cy.js** test is opening opening the Work & Co website in a browser and checking if the headline mathes the given text.
 
-1. Getting user input by prompt and using it to print out: Hello {theirName} 5 times
-2. Using a predefind parameter {name} and printing out the greeting 5 times
-3. Passing a command line argument and printing that value as Hello {argument} by typing:
+For running the program, you need to:
 
-```
-node hello.js John
-```
-
-which will print out "Hello John", or if a command you are using:
-
-```
-node hello.js
-```
-
-then it will print out set name argument 5 times
+1. Install basic conf for cypress/wdio 
+2. Install dependencies
+3. Run the test
