@@ -4,11 +4,6 @@ The **spec.cy.js** test is opening opening the Work & Co website in a browser an
 
 ##Commands:
 
-First, use nvm to ensure the correct Node.js version (specified 
-in .nvmrc)
-```
-nvm use
-```
 Install dependencies:
 ```
 npm install
