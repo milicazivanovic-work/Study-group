@@ -1,0 +1,22 @@
+{
+  "name": "study-group",
+  "version": "1.0.0",
+  "description": "The **spec.cy.js** test is opening opening the Work & Co website in a browser and checking if the headline mathes the given text.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milicazivanovic-work/Study-group.git"
+  },
+  "author": "Milica Zivanovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milicazivanovic-work/Study-group/issues"
+  },
+  "homepage": "https://github.com/milicazivanovic-work/Study-group#readme",
+  "devDependencies": {
+    "cypress": "^10.10.0"
+  }
+}

@@ -1,15 +1,22 @@
-# What is the program about
+# What is the test about
 
-The hello.js file is passing a command line argument and printing that value as Hello {argument} by typing:
+The **spec.cy.js** test is opening opening the Work & Co website in a browser and checking if the headline mathes the given text.
 
+##Commands:
+
+Install dependencies:
 ```
-node hello.js John
+npm install
 ```
-
-which will print out "Hello John", or if a command you are using:
-
+Open Cypress runner:
 ```
-node hello.js
+npx cypress open
 ```
-
-then it will print out set name argument 5 times
+Run all tests (default browser is headless Electron):
+```
+npx cypress run
+```
+Run all tests in Chrome:
+```
+npx cypress run --browser chrome
+```
