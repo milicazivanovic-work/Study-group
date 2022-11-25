@@ -1,4 +1,4 @@
-describe('Error with no data', () => {
+describe('Swag Labs cart tests', () => {
   beforeEach(() => {
     cy.login()
   })
