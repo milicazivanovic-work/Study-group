@@ -1,6 +1,6 @@
 describe('Swag Labs cart tests', () => {
   beforeEach(() => {
-    cy.login()
+    cy.login('standard_user', 'secret_sauce')
   })
 
   it('Goes to the Cart and tries to checkout without filling user information', () => {
