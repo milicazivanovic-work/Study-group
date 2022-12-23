@@ -1,4 +1,4 @@
-class cartPage {
+class CartPage {
 
     open() {
         cy.visit('/cart.html')
@@ -37,5 +37,5 @@ class cartPage {
 
 }
 
-module.exports = new cartPage();
+module.exports = new CartPage();
 

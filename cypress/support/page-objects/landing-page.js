@@ -1,4 +1,4 @@
-class landingPage {
+class LandingPage {
 
     open() {
         cy.visit('/')
@@ -42,4 +42,4 @@ class landingPage {
 
 }
 
-module.exports = new landingPage();
+module.exports = new LandingPage();

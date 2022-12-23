@@ -1,4 +1,4 @@
-class inventoryPage {
+class InventoryPage {
 
     open() {
         cy.visit('/inventory.html')
@@ -26,5 +26,5 @@ addSauceLabsBikeLightToCart() {
 
 }
 
-module.exports = new inventoryPage();
+module.exports = new InventoryPage();
 

@@ -1,4 +1,4 @@
-class checkoutPage {
+class CheckoutPage {
 
     open() {
         cy.visit('/checkout-step-one.html')
@@ -46,5 +46,5 @@ class checkoutPage {
     }
 }
 
-module.exports = new checkoutPage();
+module.exports = new CheckoutPage();
 
