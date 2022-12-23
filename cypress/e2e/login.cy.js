@@ -10,7 +10,7 @@ describe('Swag Labs login and logout test', () => {
     })
   
     it('Enters invalid credentials and asserts the error message', () => {
-      landingPage.typeUsername('milica.zivanovic@work.co');
+      landingPage.typeUsername('test_username');
       landingPage.typePassword('secret_sauce');
       landingPage.clickLoginBtn();
       landingPage.elements.error().should('have.text','Epic sadface: Username and password do not match any user in this service');
