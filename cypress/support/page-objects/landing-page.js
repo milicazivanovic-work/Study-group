@@ -1,45 +1,34 @@
-class LandingPage {
+export class LandingPage {
 
     open() {
         cy.visit('/')
     }
 
-
-    elements = {
-        
-        username: () => cy.get('[data-test="username"]'),
-        password: () => cy.get('[data-test="password"]'),
-        loginBtn: () => cy.get('[data-test="login-button"]'),
-        error: () => cy.get('[data-test="error"]'),
-        menuBtn: () => cy.get('#react-burger-menu-btn'),
-        logoutLink: () => cy.get('#logout_sidebar_link')
+    get username() {
+        return cy.get('[data-test="username"]');
+    }
+    get password(){
+        return cy.get('[data-test="password"]');
+    }
+    get loginButton(){
+        return cy.get('[data-test="login-button"]');
+    }
+    get error(){
+        return cy.get('[data-test="error"]');
+    }    
+    get menuBtn(){
+        return cy.get('#react-burger-menu-btn');
+    }
+    get logoutLink(){
+        return cy.get('#logout_sidebar_link');
     }
 
-    typeUsername(username){
-        this.elements.username().type(username);
-
+    login(username,password){
+        this.username.type(username)
+        this.password.type(password)
+        this.loginButton.click()  
     }
-
-    typePassword(password){
-        this.elements.password().type(password);
-        
-    }
-
-    clickLoginBtn(){
-        this.elements.loginBtn().click();
-        
-    }
-
-    clickMenuBtn(){
-        this.elements.menuBtn().click();
-    }
-
-    clickLogoutLink(){
-        this.elements.logoutLink().click();
-    }
-
-
 
 }
 
-module.exports = new LandingPage();
+export default new LandingPage();
