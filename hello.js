@@ -1,9 +1,9 @@
-function printHelloName(name) {
-  if (process.argv[2] != undefined) {
-    console.log('Hello', process.argv[2]);
-  } else {
-    console.log('Hello', name);
+function printHelloName() {
+    let name = process.argv[2];
+   if (name != undefined ) {
+    console.log('Hello', name)
+   } else {
+    console.log('Hello Milica');
+   }
   }
-}
-
-for (var i = 0; i < 5; i++) printHelloName('Milica');
+   for (let i = 0; i < 5; i++) printHelloName();
